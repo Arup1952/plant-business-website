@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif; 
+}
+
+body {
+    background: none;
+}
+.background-container {
+    background-image: url(background.jpeg);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.466);
+    background-blend-mode: overlay;
+    height: 100vh;
+}
+.menu-bar {
+    background: rgb(78, 24, 153);
+    background: linear-gradient(90deg, rgb(127, 62, 218) 0%, rgba(86, 124, 177, 1) 55%, rgba(26, 179, 164, 1) 100%);
+    text-align: center;
+}
+
+.menu-bar ul {
+    display: inline-flex;
+    list-style: none;
+}
+.menu-bar ul li {
+    margin: 15px;
+    padding: 10px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.menu-bar ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+.active {
+    background: black;
+    border-radius: 8px;
+}
+.menu-bar ul li:hover,
+.menu-bar ul li.active {
+    background: black;
+    border-radius: 8px;
+}
+.menu-bar ul li a:hover {
+    color: yellow;
+}
+.menu-bar .fas {
+    margin-right: 8px;
+}
+.sub-menu-1 {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: black;
+    border-radius: 8px;
+    z-index: 1;
+}
+.menu-bar ul li:hover .sub-menu-1 {
+    display: block;
+}
+.menu-bar ul li:hover .sub-menu-1 ul {
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li {
+    width: 90px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+    margin-top: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child {
+    border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover {
+    color: ;
+}
+.hero-body h1 {
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 100px;
+    margin-bottom: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-left: 50px;
+}
+.hero-body p {
+    color: white;
+    font-weight: 500;
+    margin-bottom: 15px;
+    margin-left: 50px;
+    text-transform: uppercase;
+}
+.btn {
+    display: inline-block;
+    background: transparent;
+    border-radius: 8px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: 2px solid;
+    color: #ffffff;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    font-size: 20px;
+}
+.btn:hover {
+    background: rgb(78, 24, 153);
+    background: linear-gradient(90deg, rgb(127, 62, 218) 0%, rgba(86, 124, 177, 1) 55%, rgba(26, 179, 164, 1) 100%);
+}
+
+/* Services Section */
+.services-section {
+    text-align: center;
+    color: #fff;
+    margin-top: 80px;
+}
+.services-section h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.services-section p {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.services-section ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.services-section li {
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    background: rgba(0, 0, 0, 0.589);
+    border-radius: 8px;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-decoration: transparent;
+}
+.services-section li:hover {
+    cursor: pointer;
+    background: rgb(37, 4, 82);
+    background: linear-gradient(90deg, rgb(57, 20, 109) 0%, rgb(13, 74, 158) 55%, rgb(8, 109, 99) 100%);
+}
